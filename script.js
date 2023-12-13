@@ -3,6 +3,8 @@ function stringChop(str, size) {
 
 			let s = "";
 			let result = [];
+
+	if(str.length === 0) return result;
 	for (let index = 0; index < str.length; index++) {
 		if(index%size === size-1){
 			s= s.concat(str[index]);
