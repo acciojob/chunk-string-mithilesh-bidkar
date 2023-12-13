@@ -13,10 +13,12 @@ function stringChop(str, size) {
 		}
 	}
 
+	if(s.length > 0) result.push(s);
+
 	return result;
 }
 
 // Do not change the code below
-// const str = prompt("Enter String.");
-// const size = prompt("Enter Chunk Size.");
-// alert(stringChop(str, size));
+const str = prompt("Enter String.");
+const size = prompt("Enter Chunk Size.");
+alert(stringChop(str, size));
